@@ -254,15 +254,9 @@ function mineReducer(state, action) {
         smoke: addNoise(lerp(state.sensors.smoke, profile.smoke, 0.07), 0.1),
         pressure: addNoise(lerp(state.sensors.pressure, profile.pressure, 0.04), 0.5),
         structural: addNoise(lerp(state.sensors.structural, profile.structural, 0.04), 0.2),
-        airQuality:
-          sensors.methane > 5.5 || sensors.oxygen < 18.5
-            ? 'CRITICAL'
-            : sensors.methane > 4.0 || sensors.oxygen < 19.5
-            ? 'WARNING'
-            : 'GOOD',
       };
 
-      // Fix forward reference — calculate airQuality from new values
+      // Calculate airQuality from new values
       sensors.airQuality =
         sensors.methane > 5.5 || sensors.oxygen < 18.5
           ? 'CRITICAL'
