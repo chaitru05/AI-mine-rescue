@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="sidebar-brand">
         <h1>
           <span className="brand-icon"><Shield size={16} /></span>
-          MINESAFE AI
+          BHUMI-R
         </h1>
         <p>Mine Safety &amp; Rescue Command Center</p>
       </div>
