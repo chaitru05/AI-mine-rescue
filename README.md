@@ -1,16 +1,93 @@
-# React + Vite
+# ⛏️ MineSafe AI — AI-Powered Mine Safety & Rescue System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> An intelligent robotic mine rescue and real-time monitoring system designed
+> to improve underground mine safety, detect hazards, locate trapped workers,
+> and support faster emergency response.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚨 Problem
 
-## React Compiler
+Underground coal mines face serious safety risks such as:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ☣️ Toxic gas leaks
+- 🧱 Tunnel collapse
+- 🔥 Fire and smoke
+- 🌊 Flooding
+- 🌡️ Extreme temperature
+- 👷 Trapped or missing workers
+- 📡 Poor communication and limited visibility
 
-## Expanding the Oxlint configuration
+During emergencies, sending human rescue teams directly into hazardous
+areas can put their lives at risk.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Traditional rescue operations may also lack real-time information about
+underground conditions.
+
+### The Challenge
+
+> How can we provide rescue teams with real-time underground information
+> without exposing them unnecessarily to hazardous conditions?
+
+---
+
+# 💡 Our Solution
+
+## MineSafe AI
+
+MineSafe AI is an AI-powered robotic rescue and monitoring platform that
+simulates a rugged underground rover capable of:
+
+- 🗺️ Exploring underground mine tunnels
+- ☣️ Monitoring toxic gases
+- 🌡️ Monitoring environmental conditions
+- 🎥 Providing simulated live camera data
+- 🔥 Using thermal imaging to identify human heat signatures
+- 👷 Detecting trapped workers
+- ⚠️ Identifying hazardous zones
+- 🧠 Performing AI-based risk analysis
+- 🛣️ Generating safer rescue routes
+- 🚨 Sending real-time alerts
+- 📊 Generating post-mission survey reports
+
+The system provides a **Surface Control Center** where rescue teams can
+monitor the underground environment without directly entering hazardous
+areas.
+
+---
+
+# 🎯 Core Concept
+
+```text
+                 UNDERGROUND MINE
+                       │
+                       ▼
+              🤖 RESCUE ROVER
+                       │
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+       Sensors       Camera      Thermal
+          │            │            │
+          └────────────┼────────────┘
+                       ▼
+                📡 DATA STREAM
+                       │
+                       ▼
+              🧠 AI ANALYSIS
+                       │
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+     Hazards        Workers       Risk Level
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+              🚨 CONTROL CENTER
+                       │
+             ┌─────────┴─────────┐
+             ▼                   ▼
+       Rescue Decision       Safe Route
+             │                   │
+             └─────────┬─────────┘
+                       ▼
+                 🚑 RESPONSE
+```
